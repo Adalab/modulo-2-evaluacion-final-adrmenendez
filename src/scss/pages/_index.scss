@@ -1,0 +1,13 @@
+.body {
+  font-family: 'Open sans';
+}
+
+.container {
+  margin: 0 32px;
+  @include tablet {
+    margin: 0 44px;
+  }
+  @include desktop {
+    @include contentCentered(820px);
+  }
+}

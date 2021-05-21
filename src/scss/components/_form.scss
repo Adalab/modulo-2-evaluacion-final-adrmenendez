@@ -1,0 +1,23 @@
+.form {
+  padding-top: 40px;
+  &_input {
+    width: 250px;
+    height: 30px;
+    box-shadow: $mainShadow;
+    border: none;
+    border-radius: 8px;
+    margin-right: 16px;
+    padding-left: 16px;
+  }
+  &_button {
+    box-shadow: $mainShadow;
+    border: none;
+    border-radius: 8px;
+    background-color: $mainColor;
+    color: $fontColor;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    width: 80px;
+  }
+}

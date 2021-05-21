@@ -1,0 +1,11 @@
+.grid {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  .series {
+    width: 70%;
+  }
+  .favorites-series {
+    width: 30%;
+  }
+}
