@@ -23,10 +23,13 @@
   .favorites-series {
     .series {
       &_container {
-        background-color: $backgroundColor;
-        &--title {
-          color: $mainColor;
+        &-main {
+          display: flex;
         }
+      }
+      &-x {
+        font-weight: bold;
+        cursor: pointer;
       }
     }
   }
