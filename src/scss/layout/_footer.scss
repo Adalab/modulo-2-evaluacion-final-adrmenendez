@@ -2,7 +2,7 @@
   padding-top: 100px;
   &_media {
     color: $secondFont;
-    font-size: 32px;
+    font-size: 28px;
     &--item {
       padding: 0 4px;
     }
@@ -13,6 +13,7 @@
   &_lists {
     padding-top: 24px;
     display: flex;
+    font-size: 14px;
     justify-content: space-between;
     &--item {
       color: $secondFont;
