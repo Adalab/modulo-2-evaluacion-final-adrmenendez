@@ -1,0 +1,27 @@
+.footer {
+  padding-top: 100px;
+  &_media {
+    color: $secondFont;
+    font-size: 32px;
+    &--item {
+      padding: 0 4px;
+    }
+    :hover {
+      color: $mainColor;
+    }
+  }
+  &_lists {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    &--item {
+      color: $secondFont;
+    }
+  }
+  &_copy {
+    color: $secondFont;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    font-size: 12px;
+  }
+}

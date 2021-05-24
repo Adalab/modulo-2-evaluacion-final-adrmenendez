@@ -8,42 +8,52 @@
     background-color: $backgroundColor;
   }
   &_title {
-    font-size: 24px;
+    font-size: 32px;
     color: $mainColor;
     text-transform: uppercase;
     font-family: 'Anton', sans-serif;
   }
   .form {
-    display: flex;
-    align-items: center;
     &_input {
-      width: 250px;
-      height: 30px;
-      border: 1px solid $fontColor;
-      border-radius: 8px;
-      margin-right: 16px;
-      padding-left: 16px;
       display: none;
-      background-color: $backgroundColor;
     }
     &_button {
       color: $fontColor;
       font-size: 20px;
-      font-weight: bold;
       cursor: pointer;
+      &--go {
+        display: none;
+      }
     }
   }
 }
 
 .show {
   display: flex;
-  width: 250px;
-  height: 30px;
-  border: 1px solid $fontColor;
-  border-radius: 8px;
-  margin-right: 16px;
-  padding-left: 16px;
-  background-color: $backgroundColor;
-  color: $fontColor;
-  font-size: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  .form_input {
+    display: inline;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid $secondFont;
+    padding-left: 16px;
+    background-color: $backgroundColor;
+    color: $fontColor;
+    font-size: 16px;
+  }
+  .form_button {
+    position: relative;
+    right: 280px;
+    &--go {
+      display: inline;
+      background-color: $mainColor;
+      color: $fontColor;
+      height: 30px;
+      width: 30px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
 }

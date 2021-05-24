@@ -17,30 +17,71 @@
       rel="stylesheet"
     />
 
+    <!-- header font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Evaluación final</title>
   </head>
   <body class="body">
     <header class="header container">
-      <h1 class="header_title">Series finder</h1>
+      <h1 class="header_title">Fakeflix</h1>
+      <form class="form">
+        <input
+          type="text"
+          class="form_input js-search-input"
+          placeholder="Search..."
+        />
+        <i class="fas fa-search form_button js-search-button"></i>
+        <button class="form_button--go js-searchbar-button">Go</button>
+      </form>
     </header>
 
     <main class="main">
-      <form class="form container">
-        <input type="text" class="form_input js-search-input" />
-        <button class="form_button js-search-button">Search</button>
-      </form>
       <section class="grid container">
         <ul class="series js-series-main"></ul>
-        <section class="favs-section-container">
-          <h2 class="favs-title">My favorites</h2>
-          <button class="reset js-reset-button">Reset</button>
-          <ul class="favorites-series js-series-favorites"></ul>
+
+        <section class="favsection">
+          <section class="favsection_title">
+            <h2 class="favsection_title--text">My list</h2>
+            <i class="far fa-trash-alt favsection_title--reset js-reset-button"></i>
+          </section>
+          <ul class="favsection_series js-series-favorites"></ul>
         </section>
       </section>
     </main>
 
-    
+    <footer class="footer container">
+      <section class="footer_media">
+        <i class="fab fa-instagram footer_media--item"></i>
+        <i class="fab fa-facebook-square footer_media--item"></i>
+        <i class="fab fa-twitter footer_media--item"></i>
+        <i class="fab fa-youtube footer_media--item"></i>
+      </section>
+      <section class="footer_lists">
+        <ul>
+          <li><a href="" class="footer_lists--item">Audio y subtítulos</a></li>
+          <li><a href="" class="footer_lists--item">Zona de prensa</a></li>
+          <li><a href="" class="footer_lists--item">Privacidad</a></li>
+          <li><a href="" class="footer_lists--item">Contáctanos</a></li>
+        </ul>
+        <ul>
+          <li><a href="" class="footer_lists--item">Audiodescripción</a></li>
+          <li><a href="" class="footer_lists--item">Inversores</a></li>
+          <li><a href="" class="footer_lists--item">Avisos legales</a></li>
+        </ul>
+        <ul>
+          <li><a href="" class="footer_lists--item">Centro de ayuda</a></li>
+          <li><a href="" class="footer_lists--item">Empleo</a></li>
+          <li><a href="" class="footer_lists--item">Preferencias de cookies</a></li>
+        </ul>
+      </section>
+      <p class="footer_copy">&copy; Todos los derechos reservados</p>
+    </footer>
 
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>

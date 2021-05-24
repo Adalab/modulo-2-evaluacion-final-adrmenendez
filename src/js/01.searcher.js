@@ -31,7 +31,7 @@ function getHtmlCode(array, showRemoveIcon) {
     htmlCode += `  <h2 class="series_container--title">${serie.show.name}</h2>`;
     htmlCode += `</section>`;
     if (showRemoveIcon === true) {
-      htmlCode += `  <i class="far fa-times-circle series-x js-x"></i>`;
+      htmlCode += `  <i class="far fa-times-circle series_container--x js-x"></i>`;
     }
     htmlCode += `</li>`;
   }
@@ -49,12 +49,14 @@ function handleSearchClick(ev) {
   searchSeries();
 }
 
-searchInput.addEventListener('keyup', handleSearchClick);
+searchBarBtn.addEventListener('click', handleSearchClick);
 
 //show search bar extra
-function showBar() {
-  searchInput.classList.toggle('show');
-  searchInput.classList.toggle('form_input');
+function showBar(event) {
+  const searchForm = event.target.closest('form');
+
+  searchForm.classList.toggle('show');
+  searchForm.classList.toggle('form');
 }
 
 searchBtn.addEventListener('click', showBar);
