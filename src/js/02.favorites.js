@@ -26,5 +26,5 @@ function handleFavoriteClick(event) {
 function paintFavoritesSeries() {
   let htmlCode = getHtmlCode(favorites, true);
   favoritesSeriesContainer.innerHTML = htmlCode;
-  addDeleteListeners();
+  //addDeleteListeners();
 }

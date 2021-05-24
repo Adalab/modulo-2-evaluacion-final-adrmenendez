@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   .form_input {
     display: inline;
     width: 250px;
@@ -47,13 +48,10 @@
     right: 280px;
     &--go {
       display: inline;
-      background-color: $mainColor;
-      color: $fontColor;
-      height: 30px;
-      width: 30px;
-      font-size: 14px;
-      border-radius: 4px;
+      color: $mainColor;
+      font-size: 28px;
       cursor: pointer;
+      font-family: 'Anton', sans-serif;
     }
   }
 }

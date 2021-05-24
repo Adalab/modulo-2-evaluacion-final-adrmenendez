@@ -1,6 +1,8 @@
-# Buscador de series
+# FAKEFLIX
 
 Hey!! Este es un proyecto realizado duarnte la evaluación final del módulo 2 del bootcamp de Adalab. Se trata de un buscador de series sencillo realizado usando Javascript.
+
+La web se conecta a la API de 'https://www.tvmaze.com/' para recoger los datos y pintarlos en la web usando Javascript. Una vez pintadas las series, se pueden añadir y quitar de la sección de favoritos de la izquierda haciendo click sobre ellas. Igualmente podemos eliminarlas de la sección de favoritos clickando en la 'x' o eliminar toda la lista clickando en la papelera.
 
 ## Guía de inicio rápido
 
@@ -38,3 +40,5 @@ Este comando:
   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
 
 Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+
+Enjoy!! :)
