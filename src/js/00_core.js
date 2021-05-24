@@ -9,3 +9,5 @@ const mainSeriesContainer = document.querySelector('.js-series-main');
 //favorites
 let favorites = [];
 const favoritesSeriesContainer = document.querySelector('.js-series-favorites');
+
+const resetButton = document.querySelector('.js-reset-button');

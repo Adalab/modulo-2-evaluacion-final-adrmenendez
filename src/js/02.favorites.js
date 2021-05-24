@@ -20,19 +20,10 @@ function handleFavoriteClick(event) {
   } else {
     favorites = favorites.filter((fav) => fav.show.id !== selectedId);
   }
-  setData('favoritesLocal', favorites);
-  paintFavoritesSeries();
+  ensureData();
 }
 
 function paintFavoritesSeries() {
-  if (localStorage.getItem('favoritesLocal')) {
-    const localFavs = JSON.parse(localStorage.getItem('favoritesLocal'));
-    let htmlCode = getHtmlCode(localFavs);
-    favoritesSeriesContainer.innerHTML = htmlCode;
-  } else {
-    let htmlCode = getHtmlCode(favorites);
-    favoritesSeriesContainer.innerHTML = htmlCode;
-  }
+  let htmlCode = getHtmlCode(favorites, true);
+  favoritesSeriesContainer.innerHTML = htmlCode;
 }
-
-paintFavoritesSeries();

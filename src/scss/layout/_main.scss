@@ -10,6 +10,7 @@
   }
 }
 
+//js - card
 .favorite {
   background-color: $backgroundColor;
   .series_container--title {
@@ -17,14 +18,34 @@
   }
 }
 
-.favorites-series {
+.favs-section-container {
   padding-top: 60px;
-  .series {
-    &_container {
-      background-color: $backgroundColor;
-      &--title {
-        color: $mainColor;
+  .favorites-series {
+    .series {
+      &_container {
+        background-color: $backgroundColor;
+        &--title {
+          color: $mainColor;
+        }
       }
     }
+  }
+  .reset {
+    margin-left: 16px;
+    box-shadow: $mainShadow;
+    border: 2px solid $backgroundColor;
+    border-radius: 8px;
+    color: $backgroundColor;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .favs-title {
+    font-size: 16px;
+    margin-left: 16px;
+    padding-bottom: 8px;
   }
 }

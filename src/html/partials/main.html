@@ -1,10 +1,14 @@
 <main class="main">
   <form class="form container">
-    <input type="text" class="form_input js-search-input" />
+    <input type="text" class="form_input js-search-input" value="a" />
     <button class="form_button js-search-button">Search</button>
   </form>
   <section class="grid container">
     <ul class="series js-series-main"></ul>
-    <ul class="favorites-series js-series-favorites"></ul>
+    <section class="favs-section-container">
+      <h2 class="favs-title">My favorites</h2>
+      <button class="reset js-reset-button">Reset</button>
+      <ul class="favorites-series js-series-favorites"></ul>
+    </section>
   </section>
 </main>
