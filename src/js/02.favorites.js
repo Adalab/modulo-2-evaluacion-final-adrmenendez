@@ -6,18 +6,22 @@ function addListeners() {
     card.addEventListener('click', handleFavoriteClick);
   }
 }
+
 function handleFavoriteClick(event) {
   const selectedSerie = event.currentTarget;
 
-  //selected serie es un li, y yo no quiero codigo html, quiero un objeto, por eso tengo que buscar el objeto que se corresponde con mi array en mi array de series ppal.
   const selectedId = parseInt(selectedSerie.id);
-  const serieInfo = series.find((serie) => serie.show.id === selectedId);
 
-  //voy metiendo ese objeto que encuentro en mi array de favoritas
-  favorites.push(serieInfo);
-  paintFavoritesSeries();
-  //selectedSerie.classList.toggle('favorite');
+  const serieInfo = series.find((serie) => serie.show.id === selectedId);
+  const serieFav = favorites.find((fav) => fav.show.id === serieInfo.show.id);
+
+  if (serieFav === undefined) {
+    favorites.push(serieInfo);
+  } else {
+    favorites = favorites.filter((fav) => fav.show.id !== selectedId);
+  }
   setData('favoritesLocal', favorites);
+  paintFavoritesSeries();
 }
 
 function paintFavoritesSeries() {

@@ -8,8 +8,8 @@
   &_container {
     margin: 8px 16px;
     padding: 0;
-    width: 220px;
-    height: 340px;
+    width: 160px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,18 +25,7 @@
       color: $backgroundColor;
     }
     &--img {
-      width: 200px;
-    }
-  }
-}
-
-.favorite {
-  .series {
-    &_container {
-      background-color: $backgroundColor;
-      &--title {
-        color: $mainColor;
-      }
+      width: 140px;
     }
   }
 }

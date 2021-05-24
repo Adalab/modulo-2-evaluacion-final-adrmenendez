@@ -9,3 +9,22 @@
     width: 30%;
   }
 }
+
+.favorite {
+  background-color: $backgroundColor;
+  .series_container--title {
+    color: $mainColor;
+  }
+}
+
+.favorites-series {
+  padding-top: 60px;
+  .series {
+    &_container {
+      background-color: $backgroundColor;
+      &--title {
+        color: $mainColor;
+      }
+    }
+  }
+}
