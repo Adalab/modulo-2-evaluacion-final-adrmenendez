@@ -13,10 +13,14 @@
   &_lists {
     padding-top: 24px;
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     justify-content: space-between;
     &--item {
       color: $secondFont;
+      margin-left: 12px;
+    }
+    :hover {
+      color: $mainColor;
     }
   }
   &_copy {

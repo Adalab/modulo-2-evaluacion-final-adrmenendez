@@ -35,17 +35,23 @@
   align-items: center;
   .form_input {
     display: inline;
-    width: 250px;
+    width: 100px;
     height: 30px;
     border-bottom: 1px solid $secondFont;
     padding-left: 16px;
     background-color: $backgroundColor;
     color: $fontColor;
     font-size: 16px;
+    @include tablet {
+      width: 250px;
+    }
   }
   .form_button {
     position: relative;
-    right: 280px;
+    right: 125px;
+    @include tablet {
+      right: 280px;
+    }
     &--go {
       display: inline;
       color: $mainColor;
