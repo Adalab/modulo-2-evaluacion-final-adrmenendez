@@ -1,9 +1,49 @@
 .header {
-  height: 60px;
+  height: 70px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  &_title {
-    font-size: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &_background {
+    background-color: $backgroundColor;
   }
+  &_title {
+    font-size: 24px;
+    color: $mainColor;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    &_input {
+      width: 250px;
+      height: 30px;
+      border: 1px solid $fontColor;
+      border-radius: 8px;
+      margin-right: 16px;
+      padding-left: 16px;
+      display: none;
+      background-color: $backgroundColor;
+    }
+    &_button {
+      color: $fontColor;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+.show {
+  display: flex;
+  width: 250px;
+  height: 30px;
+  border: 1px solid $fontColor;
+  border-radius: 8px;
+  margin-right: 16px;
+  padding-left: 16px;
+  background-color: $backgroundColor;
+  color: $fontColor;
+  font-size: 16px;
 }

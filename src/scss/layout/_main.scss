@@ -5,7 +5,7 @@
   .series {
     width: 70%;
   }
-  .favorites-series {
+  .favs-section-container {
     width: 30%;
   }
 }
@@ -20,35 +20,53 @@
 
 .favs-section-container {
   padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .favorites-series {
     .series {
       &_container {
+        height: 150px;
+        margin: 14px 0;
         &-main {
           display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: flex-start;
+        }
+        &--title {
+          color: $mainColor;
+        }
+        &--img {
+          width: 100px;
+          height: 150px;
         }
       }
       &-x {
         font-weight: bold;
         cursor: pointer;
+        color: $fontColor;
+        margin-top: 16px;
       }
     }
   }
-  .reset {
-    margin-left: 16px;
-    box-shadow: $mainShadow;
-    border: 2px solid $backgroundColor;
-    border-radius: 8px;
-    color: $backgroundColor;
-    font-size: 16px;
-    font-weight: bold;
-    height: 30px;
-    width: 80px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  .favs-title {
-    font-size: 16px;
-    margin-left: 16px;
-    padding-bottom: 8px;
+  .favorites_title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    &--text {
+      font-size: 16px;
+      margin-left: 16px;
+      padding-bottom: 8px;
+      color: $fontColor;
+      text-transform: uppercase;
+    }
+    &--reset {
+      font-size: 16px;
+      color: $fontColor;
+      cursor: pointer;
+    }
   }
 }

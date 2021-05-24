@@ -1,5 +1,6 @@
 .body {
   font-family: 'Open sans';
+  background-color: $backgroundColor;
 }
 
 .container {
@@ -8,6 +9,6 @@
     margin: 0 44px;
   }
   @include desktop {
-    @include contentCentered(820px);
+    @include contentCentered(1024px);
   }
 }

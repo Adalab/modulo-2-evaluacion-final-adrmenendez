@@ -6,8 +6,7 @@ function searchSeries() {
     .then((res) => res.json())
     .then((data) => {
       series = data;
-      //ensureData();
-      console.log(data);
+      ensureData();
     });
 }
 searchSeries();
@@ -32,7 +31,7 @@ function getHtmlCode(array, showRemoveIcon) {
     htmlCode += `  <h2 class="series_container--title">${serie.show.name}</h2>`;
     htmlCode += `</section>`;
     if (showRemoveIcon === true) {
-      htmlCode += `  <p class="series-x js-x">x</p>`;
+      htmlCode += `  <i class="far fa-times-circle series-x js-x"></i>`;
     }
     htmlCode += `</li>`;
   }
@@ -50,4 +49,12 @@ function handleSearchClick(ev) {
   searchSeries();
 }
 
-searchBtn.addEventListener('click', handleSearchClick);
+searchInput.addEventListener('keyup', handleSearchClick);
+
+//show search bar extra
+function showBar() {
+  searchInput.classList.toggle('show');
+  searchInput.classList.toggle('form_input');
+}
+
+searchBtn.addEventListener('click', showBar);
