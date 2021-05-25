@@ -18,4 +18,4 @@ function showBar(event) {
 
 listenEvents('.js-search-button', showBar);
 searchInput.addEventListener('keyup', handleSearchClick);
-resetButton.addEventListener('click', handleReset);
+//resetButton.addEventListener('click', handleReset);

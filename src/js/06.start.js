@@ -2,7 +2,7 @@
 
 function ensureData() {
   setData('favoritesLocal', favorites);
-  paintFavoritesSeries();
+  //paintFavoritesSeries();
   paintSeries();
   listenEvents('.js-series-card', handleFavoriteClick);
   listenEvents('.js-x', handleDeleteButton);
