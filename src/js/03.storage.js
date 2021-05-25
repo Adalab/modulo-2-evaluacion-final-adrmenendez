@@ -1,5 +1,6 @@
 'use strict';
 
+//set local storage
 function setData(varName, varData) {
   localStorage.setItem(varName, JSON.stringify(varData));
 }
