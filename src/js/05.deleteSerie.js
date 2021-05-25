@@ -1,15 +1,15 @@
 'use strict';
 
 function handleDeleteButton(event) {
-  const selectedSerie = event.target.closest('li');
-
+  const selectedSerie = event.currentTarget;
   const selectedId = parseInt(selectedSerie.id);
 
   const serieFav = favorites.find((fav) => fav.show.id === selectedId);
 
   let index = favorites.indexOf(serieFav);
-  favorites.splice(index, 1);
-
+  if (index > -1) {
+    favorites.splice(index, 1);
+  }
   ensureData();
 }
 

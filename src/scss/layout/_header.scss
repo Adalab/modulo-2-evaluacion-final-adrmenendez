@@ -21,6 +21,7 @@
       color: $fontColor;
       font-size: 20px;
       cursor: pointer;
+      transform: rotate(90deg);
       &--go {
         display: none;
       }

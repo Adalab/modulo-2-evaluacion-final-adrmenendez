@@ -31,7 +31,7 @@ function getHtmlCode(array, showRemoveIcon) {
     htmlCode += `  <h2 class="series_container--title">${serie.show.name}</h2>`;
     htmlCode += `</section>`;
     if (showRemoveIcon === true) {
-      htmlCode += `  <i class="far fa-times-circle series_container--x js-x"></i>`;
+      htmlCode += `  <i class="far fa-times-circle series_container--x js-x" id= ${serie.show.id}></i>`;
     }
     htmlCode += `</li>`;
   }
