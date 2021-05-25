@@ -8,6 +8,5 @@ function ensureData() {
   listenEvents('.js-x', handleDeleteButton);
 }
 
-//start the page
 getData('favoritesLocal');
 ensureData();

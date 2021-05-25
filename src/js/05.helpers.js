@@ -1,6 +1,5 @@
 'use strict';
 
-//helpers
 function listenEvents(selector, handler, eventType = 'click') {
   const elements = document.querySelectorAll(selector);
   for (const element of elements) {

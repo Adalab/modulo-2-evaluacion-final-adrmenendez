@@ -16,7 +16,6 @@ function showBar(event) {
   searchForm.classList.toggle('form');
 }
 
-//listen to buttons
 searchBarBtn.addEventListener('click', handleSearchClick);
 resetButton.addEventListener('click', handleReset);
 searchBtn.addEventListener('click', showBar);
