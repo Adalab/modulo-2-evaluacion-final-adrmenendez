@@ -2,9 +2,9 @@
 
 //global data
 let series = [];
+let allSeries = [];
 let favorites = [];
 
 //buttons
-const searchBtn = document.querySelector('.js-search-button');
-const searchBarBtn = document.querySelector('.js-searchbar-button');
 const resetButton = document.querySelector('.js-reset-button');
+const searchInput = document.querySelector('.js-search-input');

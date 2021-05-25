@@ -1,7 +1,16 @@
 'use strict';
 
+function getSeriesInfo() {
+  fetch(`//api.tvmaze.com/search/shows?q=friends`)
+    .then((res) => res.json())
+    .then((data) => {
+      allSeries = data;
+      paintAllSeries();
+    });
+}
+getSeriesInfo();
+
 function searchSeries() {
-  const searchInput = document.querySelector('.js-search-input');
   const searchInputValue = searchInput.value;
   fetch(`//api.tvmaze.com/search/shows?q=${searchInputValue}`)
     .then((res) => res.json())

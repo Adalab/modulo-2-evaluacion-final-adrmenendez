@@ -16,6 +16,6 @@ function showBar(event) {
   searchForm.classList.toggle('form');
 }
 
-searchBarBtn.addEventListener('click', handleSearchClick);
+listenEvents('.js-search-button', showBar);
+searchInput.addEventListener('keyup', handleSearchClick);
 resetButton.addEventListener('click', handleReset);
-searchBtn.addEventListener('click', showBar);

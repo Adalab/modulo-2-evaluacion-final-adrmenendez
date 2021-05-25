@@ -35,6 +35,12 @@ function paintSeries() {
   mainSeriesContainer.innerHTML = htmlCode;
 }
 
+function paintAllSeries() {
+  const mainSeriesContainer = document.querySelector('.js-series-main');
+  let htmlCode = getHtmlCode(allSeries);
+  mainSeriesContainer.innerHTML = htmlCode;
+}
+
 function paintFavoritesSeries() {
   const favoritesSeriesContainer = document.querySelector(
     '.js-series-favorites'

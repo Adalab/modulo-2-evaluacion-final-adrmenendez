@@ -1,0 +1,61 @@
+.favsection {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_series {
+    .series_container {
+      height: 190px;
+      margin: 14px 0;
+      max-width: 100px;
+      &-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+      &--title {
+        color: $mainColor;
+        text-align: center;
+      }
+      &--img {
+        width: 100px;
+        height: 150px;
+      }
+      &:hover {
+        transform: none;
+      }
+      &--x {
+        font-weight: bold;
+        cursor: pointer;
+        color: $fontColor;
+        margin-top: 16px;
+        padding-left: 8px;
+      }
+    }
+  }
+  &_title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: $fontColor;
+    &--text {
+      text-transform: uppercase;
+    }
+    &--reset {
+      margin-left: 16px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+//js - card
+.favorite {
+  background-color: $backgroundColor;
+  .series_container--title {
+    color: $mainColor;
+  }
+}
