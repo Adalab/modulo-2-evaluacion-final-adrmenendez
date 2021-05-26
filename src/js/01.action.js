@@ -1,10 +1,10 @@
 'use strict';
 
 function getSeriesInfo() {
-  fetch(`//api.tvmaze.com/search/shows?q=friends`)
+  fetch(`//api.tvmaze.com/schedule`)
     .then((res) => res.json())
     .then((data) => {
-      allSeries = data;
+      bestSeries = data;
       paintAllSeries();
     });
 }

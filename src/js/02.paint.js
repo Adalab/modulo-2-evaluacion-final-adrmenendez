@@ -37,7 +37,7 @@ function paintSeries() {
 
 function paintAllSeries() {
   const mainSeriesContainer = document.querySelector('.js-series-main');
-  let htmlCode = getHtmlCode(allSeries);
+  let htmlCode = getHtmlCode(bestSeries);
   mainSeriesContainer.innerHTML = htmlCode;
 }
 

@@ -1,7 +1,7 @@
 {
-	"name": "adalab-web-starter-kit",
+	"name": "fakeflix",
 	"version": "3.0.1",
-	"description": "Adalab web starter kit",
+	"description": "fakeflix",
 	"dependencies": {
 		"browser-sync": "^2.26.12",
 		"del": "^5.1.0",

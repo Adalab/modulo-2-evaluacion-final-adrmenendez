@@ -2,7 +2,7 @@
 
 //global data
 let series = [];
-let allSeries = [];
+let bestSeries = [];
 let favorites = [];
 
 //buttons
