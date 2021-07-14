@@ -8,7 +8,6 @@ function getSeriesInfo() {
       paintAllSeries();
     });
 }
-getSeriesInfo();
 
 function searchSeries() {
   const searchInputValue = searchInput.value;

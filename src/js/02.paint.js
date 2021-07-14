@@ -41,10 +41,10 @@ function paintAllSeries() {
   mainSeriesContainer.innerHTML = htmlCode;
 }
 
-// function paintFavoritesSeries() {
-//   const favoritesSeriesContainer = document.querySelector(
-//     '.js-series-favorites'
-//   );
-//   let htmlCode = getHtmlCode(favorites, true);
-//   favoritesSeriesContainer.innerHTML = htmlCode;
-// }
+function paintFavoritesSeries() {
+  const favoritesSeriesContainer = document.querySelector(
+    '.js-series-favorites'
+  );
+  let htmlCode = getHtmlCode(favorites, true);
+  favoritesSeriesContainer.innerHTML = htmlCode;
+}

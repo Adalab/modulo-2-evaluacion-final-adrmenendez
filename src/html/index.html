@@ -32,5 +32,14 @@
     <include src="./partials/main.html"></include>
     <include src="./partials/footer.html"></include>
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('load', function (event) {
+        listenIndexButtons();
+
+        getData('favoritesLocal');
+        getSeriesInfo();
+        ensureData();
+      });
+    </script>
   </body>
 </html>
